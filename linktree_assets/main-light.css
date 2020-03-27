@@ -1,0 +1,34 @@
+.centrato {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  body {
+    animation: colorchange 10s infinite;
+    -webkit-animation: colorchange 10s infinite; 
+  }
+
+  @keyframes colorchange
+  {
+    0%   {background: lightcyan;}
+    50% {background: lightskyblue;}
+    100% {background: lightcyan;}
+  }
+
+  @-webkit-keyframes colorchange 
+  {
+    0%   {background: lightcyan;}
+    50% {background: lightskyblue;}
+    100% {background: lightcyan;}
+  }
+
+  
