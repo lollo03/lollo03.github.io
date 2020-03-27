@@ -5,10 +5,23 @@
     transform: translate(-50%, -50%);
   }
 
-body{
-  background-color: darkslategrey;  
-}
-  
+  body {
+    animation: colorchange 10s infinite;
+    -webkit-animation: colorchange 10s infinite; 
+  }
 
+  @keyframes colorchange
+  {
+    0%   {background: darkgray;}
+    50% {background: darkslategray;}
+    100% {background: darkgray;}
+  }
+
+  @-webkit-keyframes colorchange 
+  {
+    0%   {background: darkgray;}
+    50% {background: darkslategray;}
+    100% {background: darkgray;}
+  }
 
   
