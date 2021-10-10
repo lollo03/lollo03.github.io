@@ -1,15 +1,15 @@
 <template>
   <suspense>
-    <div v-bind:class="{ dark: isDark }" class="transition-all duration-500 ease-in-out">
-      <div class="dark:bg-gray-900 h-screen dark:text-white">
+    <div v-bind:class="{ dark: isDark }">
+      <div class="dark:bg-gray-900 dark:text-white md:h-screen md:overflow-hidden">
         <Top @darkToggle="darkToggle" :isDark="isDark"/>
-        <div class="md:flex">
-          <div class="md:w-1/2">
+        <div class="md:flex h-full">
+          <div class="md:w-1/3">
             <Scheda />
           </div>
           <div class="md:h-100" style="border-left: 2px solid"></div>
           <hr class="md:hidden" />
-          <div class="md:w-1/2">
+          <div class="md:w-2/3 md:overflow-y-scroll h-full">
             <Articolo />
           </div>
         </div>

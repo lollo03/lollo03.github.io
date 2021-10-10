@@ -1,9 +1,10 @@
 <template>
-  <div>
-    <div v-for="(articolo, i) in articoli" v-bind:key="i" style="font-size: 100% !important" >
+  <div class="">
+    <div v-for="(articolo, i) in articoli" v-bind:key="i" class="my-4 mx-1" >
     <Markdown :source="articolo" />
     <hr class="w-5/6 m-auto">
     </div>
+    <br><br><br>
   </div>
 </template>
 

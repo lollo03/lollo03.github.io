@@ -108,9 +108,10 @@
     </div>
     <hr />
     <div class="p-5">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab odio magnam
-      facilis ipsum. Laborum quisquam optio reprehenderit ducimus eligendi! Quo
-      quas tenetur est beatae assumenda, nam accusantium molestias ex minus.
+      <p>Ciao, sono Lorenzo, benvenuto nel mio portfolio/blog. Ti consiglio di visitare questo sito <b>da pc</b> per la migliore esperienza possibile.</p>
+      <p>Sono uno studente al 5 anno del liceo scientifico scienze applicate, mi piace l'informatica e la fotografia.</p> 
+      <p>Qua sopra trovi il mio profilo github, visitalo per scoprire come ho costruti questo sito (è qualcosa di davvero figo!)</p> 
+      <b>Buona visita!</b>
     </div>
   </div>
 </template>
@@ -129,6 +130,6 @@ img {
 }
 
 img:hover {
-   border : 5px solid white;   
+   border : 5px solid purple;   
 }
 </style>

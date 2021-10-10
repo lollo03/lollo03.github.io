@@ -5,8 +5,8 @@
         Lorenzo Andreasi
       </h1>
     </div>
-    <div class="flex-grow flex items-end animate-pulse">
-      <button v-on:click="$emit('darkToggle')">
+    <div class="flex-grow flex flex-row-reverse animate-pulse">
+      <button v-on:click="$emit('darkToggle')" class="mr-6">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-8 w-1/1"
