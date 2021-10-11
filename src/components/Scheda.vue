@@ -6,9 +6,9 @@
       </div>
       <div class="flex-grow p-1 flex flex-col">
         <div class="flex-grow flex items-center justify-center">
-          <h1 class="text-xl">Lorenzo Andreasi</h1>
+          <h1 class="text-xl transition duration-500 ease-in-out hover:text-purple-400 transform hover:-translate-y-1 hover:scale-110">Lorenzo Andreasi</h1>
         </div>
-        <div class="flex-grow flex items-center justify-center">
+        <div class="flex-grow flex items-center justify-center transition duration-500 ease-in-out hover:text-purple-400 transform hover:-translate-y-1 hover:scale-110">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-6 w-6 "
@@ -31,7 +31,7 @@
           </svg>
           <p>Termoli (CB)</p>
         </div>
-        <div class="flex-grow flex items-center justify-center">
+        <div class="flex-grow flex items-center justify-center transition duration-500 ease-in-out hover:text-purple-400 transform hover:-translate-y-1 hover:scale-110">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-6 w-6 "
@@ -48,7 +48,7 @@
           </svg>
           <p>02/05/2003</p>
         </div>
-        <div class="flex-grow flex items-center justify-center">
+        <div class="flex-grow flex items-center justify-center transition duration-500 ease-in-out hover:text-purple-400 transform hover:-translate-y-1 hover:scale-110">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-6 w-6"
@@ -76,7 +76,7 @@
       <div class="flex p-5">
         <a
           href="https://www.instagram.com/lolloandr/?hl=it"
-          class="flex-grow flex"
+          class="flex-grow flex no-underline text-black dark:text-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +91,7 @@
           </svg>
         </a>
 
-        <a href="https://github.com/lollo03" class="flex-grow flex">
+        <a href="https://github.com/lollo03" class="flex-grow flex no-underline text-black dark:text-white">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-6 w-6 flex-grow transition duration-500 ease-in-out hover:text-purple-400 transform hover:-translate-y-1 hover:scale-110"
@@ -130,6 +130,6 @@ img {
 }
 
 img:hover {
-   border : 5px solid purple;   
+   border : 5px solid #b19ff4;   
 }
 </style>

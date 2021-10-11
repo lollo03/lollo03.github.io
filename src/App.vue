@@ -1,7 +1,7 @@
 <template>
   <suspense>
     <div v-bind:class="{ dark: isDark }">
-      <div class="dark:bg-gray-900 dark:text-white md:h-screen md:overflow-hidden">
+      <div class="bg-yellow-50 dark:bg-gray-900 dark:text-white md:h-screen md:overflow-hidden">
         <Top @darkToggle="darkToggle" :isDark="isDark"/>
         <div class="md:flex h-full">
           <div class="md:w-1/3">
@@ -65,6 +65,5 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
 }
 </style>

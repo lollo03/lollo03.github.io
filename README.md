@@ -1,7 +1,6 @@
 # Todo list
-[] Animazioni (typed.js)
-[] Fix scrolling mobile
-[] Fix title HTML
-[] Aggiungi plugin markdown-it
-[] Fix spazio tra articoli
-[] Cambio colore white mode con font
+- [x] Fix scrolling mobile
+- [x] Fix title HTML
+- [x] Aggiungi plugin markdown-it
+- [x] Fix spazio tra articoli
+- [x] Cambio colore white mode

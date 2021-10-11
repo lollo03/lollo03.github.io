@@ -1,16 +1,18 @@
 <template>
-  <div class="">
+  <div class="my-5 mx-8 text-justify dark:arancio">
     <div v-for="(articolo, i) in articoli" v-bind:key="i" class="my-4 mx-1" >
-    <Markdown :source="articolo" />
+    <Markdown :source="articolo" :plugins="plugins"/>
     <hr class="w-5/6 m-auto">
     </div>
-    <br><br><br>
+    <br>
   </div>
 </template>
 
 <script>
 import Markdown from "vue3-markdown-it";
+import MarkdownItTaskLists from "markdown-it-task-lists"
 import { ottieniArticoli, ottieniArticolo } from "../api";
+
 export default {
   name: "Articolo",
   components: { Markdown },
@@ -24,13 +26,18 @@ export default {
     }
     
     return {
-      articoli
+      articoli,
+      plugins: [{
+        plugin: MarkdownItTaskLists
+      }]
     };
   },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
+<style>
+.arancio{
+  color: orange;
+}
 </style>

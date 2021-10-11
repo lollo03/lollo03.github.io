@@ -1,11 +1,11 @@
 <template>
   <div class="w-screen flex h-12 items-center border-b-2">
     <div class="flex-grow md:w-5/6">
-      <h1 class="text-left ml-3 md:ml-8 text-xl md:text-2xl">
+      <h1 class="text-left ml-3 md:ml-8 text-xl md:text-2xl animate__animated animate__backInDown">
         Lorenzo Andreasi
       </h1>
     </div>
-    <div class="flex-grow flex flex-row-reverse animate-pulse">
+    <div class="flex-grow flex flex-row-reverse animate__animated animate__backInRight">
       <button v-on:click="$emit('darkToggle')" class="mr-6">
         <svg
           xmlns="http://www.w3.org/2000/svg"
