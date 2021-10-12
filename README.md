@@ -4,3 +4,5 @@
 - [x] Aggiungi plugin markdown-it
 - [x] Fix spazio tra articoli
 - [x] Cambio colore white mode
+- [x] Migliorare visibilità testi
+- [x] Cambiare stile titoli e roba varia
