@@ -13,6 +13,12 @@
       @apply text-lg;
       @apply font-bold;
     }
+    h4 {
+      @apply font-bold;
+    }
+    h5 {
+      @apply font-bold;
+    }
     a {
       @apply text-blue-600 underline;
     }
