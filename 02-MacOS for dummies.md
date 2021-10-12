@@ -15,7 +15,5 @@ Pock ci permette di personalizzare la touchbar in vari modi, include una serie d
 Inoltre è possibile disattivare ed attivare **Pock** tramite una scorciatoia da tastiera personalizzabile, per tornare alla touchbar di sistema quando ci è più utile.
 ### L'app definitiva per markdown
 Il **markdown** sta diventanto sempre più utilizzato, che si tratti di prendere appunti o di scrivere un post di un blog (come questo), è la scelta numero uno per molte persone. Oggi vi presento [Typora](https://typora.io), quello che secondo me è **il miglior editor minimalista per markdown**. Rimarrete stupiti dalla sua essenziale usababilità, l'interfaccia è molto pulita ma ci permette di fare tutto. Tra le mie funzioni preferite c'è la ottima integrazione della touchbar e la modalità ***typewriter***, che permette di avere il cursore sempre al centro dello schermo, in modo da non ritrovarsi a dover abbasare il capo per continuare la scrittura. L'app è attualmente in **beta** ed è momentaneamente gratuita, non sappiamo quale sarà il prezzo quando verrà rilasciata definitivamente. E' disponibile anche per Windows e Linux.
-
----
-
+#### Conclusioni:
 Queste sono le app che io personalmente consiglio a chiunque si approcci al mondo Apple da una diversa piattaforma per rendere la transizione il più comoda e accessibile possibile!
