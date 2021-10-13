@@ -110,7 +110,7 @@
     <div class="p-5">
       <p>Ciao, sono Lorenzo, benvenuto nel mio portfolio/blog. Ti consiglio di visitare questo sito <b>da pc</b> per la migliore esperienza possibile.</p>
       <p>Sono uno studente al 5 anno del liceo scientifico scienze applicate, mi piace l'informatica e la fotografia.</p> 
-      <p>Qua sopra trovi il mio profilo github, visitalo per scoprire come ho costruti questo sito (è qualcosa di davvero figo!)</p> 
+      <p>Qua sopra trovi il mio profilo github, visitalo per scoprire come ho costruito questo sito (è qualcosa di davvero figo!)</p> 
       <b>Buona visita!</b>
     </div>
   </div>
