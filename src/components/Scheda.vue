@@ -6,12 +6,38 @@
       </div>
       <div class="flex-grow p-1 flex flex-col">
         <div class="flex-grow flex items-center justify-center">
-          <h1 class="text-xl transition duration-500 ease-in-out hover:text-purple-400 transform hover:-translate-y-1 hover:scale-110">Lorenzo Andreasi</h1>
+          <h1
+            class="
+              text-xl
+              transition
+              duration-500
+              ease-in-out
+              hover:text-purple-400
+              transform
+              hover:-translate-y-1
+              hover:scale-110
+            "
+          >
+            Lorenzo Andreasi
+          </h1>
         </div>
-        <div class="flex-grow flex items-center justify-center transition duration-500 ease-in-out hover:text-purple-400 transform hover:-translate-y-1 hover:scale-110">
+        <div
+          class="
+            flex-grow flex
+            items-center
+            justify-center
+            transition
+            duration-500
+            ease-in-out
+            hover:text-purple-400
+            transform
+            hover:-translate-y-1
+            hover:scale-110
+          "
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 "
+            class="h-6 w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -31,10 +57,23 @@
           </svg>
           <p>Termoli (CB)</p>
         </div>
-        <div class="flex-grow flex items-center justify-center transition duration-500 ease-in-out hover:text-purple-400 transform hover:-translate-y-1 hover:scale-110">
+        <div
+          class="
+            flex-grow flex
+            items-center
+            justify-center
+            transition
+            duration-500
+            ease-in-out
+            hover:text-purple-400
+            transform
+            hover:-translate-y-1
+            hover:scale-110
+          "
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 "
+            class="h-6 w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -48,7 +87,20 @@
           </svg>
           <p>02/05/2003</p>
         </div>
-        <div class="flex-grow flex items-center justify-center transition duration-500 ease-in-out hover:text-purple-400 transform hover:-translate-y-1 hover:scale-110">
+        <div
+          class="
+            flex-grow flex
+            items-center
+            justify-center
+            transition
+            duration-500
+            ease-in-out
+            hover:text-purple-400
+            transform
+            hover:-translate-y-1
+            hover:scale-110
+          "
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-6 w-6"
@@ -80,7 +132,18 @@
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 flex-grow transition duration-500 ease-in-out hover:text-purple-400 transform hover:-translate-y-1 hover:scale-110"
+            class="
+              h-6
+              w-6
+              flex-grow
+              transition
+              duration-500
+              ease-in-out
+              hover:text-purple-400
+              transform
+              hover:-translate-y-1
+              hover:scale-110
+            "
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentcolor"
@@ -91,10 +154,24 @@
           </svg>
         </a>
 
-        <a href="https://github.com/lollo03" class="flex-grow flex no-underline text-black dark:text-white">
+        <a
+          href="https://github.com/lollo03"
+          class="flex-grow flex no-underline text-black dark:text-white"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 flex-grow transition duration-500 ease-in-out hover:text-purple-400 transform hover:-translate-y-1 hover:scale-110"
+            class="
+              h-6
+              w-6
+              flex-grow
+              transition
+              duration-500
+              ease-in-out
+              hover:text-purple-400
+              transform
+              hover:-translate-y-1
+              hover:scale-110
+            "
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentcolor"
@@ -107,11 +184,29 @@
       </div>
     </div>
     <hr />
-    <div class="p-5">
-      <p>Ciao, sono Lorenzo, benvenuto nel mio portfolio/blog. Ti consiglio di visitare questo sito <b>da pc</b> per la migliore esperienza possibile.</p>
-      <p>Sono uno studente al 5 anno del liceo scientifico scienze applicate, mi piace l'informatica e la fotografia.</p> 
-      <p>Qua sopra trovi il mio profilo github, visitalo per scoprire come ho costruti questo sito (è qualcosa di davvero figo!)</p> 
+    <div class="m-5 text-justify">
+      <p>
+        Ciao, sono Lorenzo, benvenuto nel mio portfolio/blog. Ti consiglio di
+        visitare questo sito <b>da pc</b> per la migliore esperienza possibile.
+      </p>
+      <p>
+        Sono uno studente al 5 anno del liceo scientifico scienze applicate, mi
+        piace l'informatica e la fotografia.
+      </p>
+      <p>
+        Qua sopra trovi il mio profilo github, visitalo per scoprire come ho
+        costruti questo sito (è qualcosa di davvero figo!)
+      </p>
       <b>Buona visita!</b>
+    </div>
+    <hr />
+    <div class="text-left m-5">
+      <h3>Certificati e partecipazioni:</h3>
+      <ul>
+        <li>Certificazione di inglese cambridge B2</li>
+        <li>Partecipazione categoria informatica ODASC 2020</li>
+        <li>Abilitazione ADI FIV</li>
+      </ul>
     </div>
   </div>
 </template>
@@ -122,14 +217,14 @@ export default {};
 
 <style scoped>
 img {
-  border : 1px solid black;
-  -webkit-transition : border 500ms ease-out;
-  -moz-transition : border 500ms ease-out;
-  -o-transition : border 500ms ease-out;
-  transition : border 500ms ease-out;
+  border: 1px solid black;
+  -webkit-transition: border 500ms ease-out;
+  -moz-transition: border 500ms ease-out;
+  -o-transition: border 500ms ease-out;
+  transition: border 500ms ease-out;
 }
 
 img:hover {
-   border : 5px solid #b19ff4;   
+  border: 5px solid #b19ff4;
 }
 </style>

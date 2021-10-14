@@ -6,3 +6,5 @@
 - [x] Cambio colore white mode
 - [x] Migliorare visibilità testi
 - [x] Cambiare stile titoli e roba varia
+- [ ] Ricerca
+- [ ] Due pagine? (1 x  portfolio)
