@@ -195,7 +195,7 @@
       </p>
       <p>
         Qua sopra trovi il mio profilo github, visitalo per scoprire come ho
-        costruti questo sito (è qualcosa di davvero figo!)
+        costruito questo sito (è qualcosa di davvero figo!)
       </p>
       <b>Buona visita!</b>
     </div>
