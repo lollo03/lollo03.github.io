@@ -1,16 +1,31 @@
 <template>
   <div class="my-5 mx-8 text-justify dark:arancio">
-    <h1>Sezione in costruzione</h1>
-    <h2>torna più tardi...</h2>
-
+    <Markdown :source="portfolio" :plugins="plugins" class="mb-6" />
     <br />
     <br />
   </div>
 </template>
 
 <script>
+import Markdown from "vue3-markdown-it";
+import MarkdownItTaskLists from "markdown-it-task-lists";
+import { ottieniPortfolio } from "../api";
+
 export default {
   name: "Portfolio",
+  components: { Markdown },
+  async setup() {
+    let portfolio = await ottieniPortfolio();
+
+    return {
+      portfolio,
+      plugins: [
+        {
+          plugin: MarkdownItTaskLists,
+        },
+      ],
+    };
+  },
 };
 </script>
 
