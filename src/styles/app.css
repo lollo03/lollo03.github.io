@@ -1,32 +1,34 @@
 /* ./src/styles/app.css */
 @tailwind base;
 @layer base {
-    h1 {
-      @apply text-2xl;
-      @apply font-bold;
-    }
-    h2 {
-      @apply text-xl;
-      @apply font-bold;
-    }
-    h3 {
-      @apply text-lg;
-      @apply font-bold;
-    }
-    h4 {
-      @apply font-bold;
-    }
-    h5 {
-      @apply font-bold;
-    }
-    a {
-      @apply text-blue-600 underline;
-    }
-    ol,ul {
+  h1 {
+    @apply text-2xl;
+    @apply font-bold;
+  }
+  h2 {
+    @apply mt-2;
+    @apply text-xl;
+    @apply font-bold;
+  }
+  h3 {
+    @apply text-lg;
+    @apply font-bold;
+  }
+  h4 {
+    @apply font-bold;
+  }
+  h5 {
+    @apply font-bold;
+  }
+  a {
+    @apply text-blue-500;
+  }
+  ol,
+  ul {
     list-style: inside;
     margin: 0;
     padding: 0;
-    }
+  }
 }
 @tailwind components;
 @tailwind utilities;

@@ -1,6 +1,6 @@
 module.exports = {
-  purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
-  darkMode: 'class',
+  purge: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {},
   },
@@ -8,7 +8,5 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-  corePlugins:{
-    
-  }
-}
+  corePlugins: {},
+};
