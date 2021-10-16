@@ -1,7 +1,12 @@
 <template>
   <div class="my-5 mx-8 text-justify dark:arancio">
     <div v-for="(articolo, i) in articoli" v-bind:key="i" class="my-4 mx-1">
-      <Markdown :source="articolo" :plugins="plugins" class="mb-6" />
+      <Markdown
+        :source="articolo"
+        :plugins="plugins"
+        class="mb-6"
+        :html="true"
+      />
       <hr class="w-5/6 mb-8 m-auto" />
     </div>
     <br />
