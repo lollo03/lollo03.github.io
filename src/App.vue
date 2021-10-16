@@ -54,7 +54,7 @@ export default {
   },
   setup() {
     const isDark = ref(false);
-    const isPortfolio = ref(false);
+    const isPortfolio = ref(true);
     return {
       isDark,
       isPortfolio,

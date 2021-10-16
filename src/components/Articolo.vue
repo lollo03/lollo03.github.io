@@ -1,6 +1,10 @@
 <template>
-  <div class="my-5 mx-8 text-justify dark:arancio">
-    <div v-for="(articolo, i) in articoli" v-bind:key="i" class="my-4 mx-1">
+  <div class="my-5 mx-8 text-justify">
+    <div
+      v-for="(articolo, i) in articoli"
+      v-bind:key="i"
+      class="my-4 mx-1 markdown"
+    >
       <Markdown
         :source="articolo"
         :plugins="plugins"
@@ -43,8 +47,4 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
-.arancio {
-  color: orange;
-}
-</style>
+<style></style>

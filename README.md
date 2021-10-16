@@ -11,4 +11,4 @@
 - [x] Due pagine? (1 x portfolio)
 - [x] Togliere sottolineato link
 - [x] Aggiungere spazio sopra titoli
-- [ ] Cambiare colore a dark mode
+- [x] Cambiare colore a dark mode

@@ -21,13 +21,17 @@
     @apply font-bold;
   }
   a {
-    @apply text-blue-500;
+    @apply text-blue-600;
+    @apply font-semibold;
   }
   ol,
   ul {
     list-style: inside;
     margin: 0;
     padding: 0;
+  }
+  .dark a {
+    @apply text-yellow-400;
   }
 }
 @tailwind components;
