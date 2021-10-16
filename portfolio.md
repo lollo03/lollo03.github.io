@@ -2,12 +2,15 @@ Ciao, di seguito troverai elencati alcuni dei miei progetti!
 
 ## lollo03.github.io
 
-Esattamente, questo [sito](https://lollo03.github.io)! Il primo articolo della sezione posts ti darà maggiori informazioni. In breve questo sito dimostra la flessibilità delle **github actions** unite con la potenza di un framework come **Vue.js**. Il tutto è mischiato con una conoscenza del **markdown** e del frameowork **tailwind** per lo stile.\
+Esattamente, questo [sito](https://lollo03.github.io)! Il primo articolo della sezione posts ti darà maggiori informazioni. In breve questo sito dimostra la flessibilità delle **github actions** unite con la potenza di un framework come **Vue.js**. Il tutto è mischiato con una conoscenza del **markdown** e del frameowork **tailwind** per lo stile.
+Questo sito presenta anche un feed [RSS](https://lollo03.github.io/lollo03.github.io-rss/rss), generato sempre tramite una github action ed uno script python, trovi [qua](https://github.com/lollo03/lollo03.github.io-rss) il repository.\
 Tecnologie usate:
 
 - [Vue.js](https://vuejs.org)
 - [Github actions](https://github.com/features/actions)
 - [Tailwind](https://tailwindcss.com)
+- [Feed RSS](https://it.wikipedia.org/wiki/RSS)
+- [Python 3](https://www.python.org)
 
 ## che-colore
 
