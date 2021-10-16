@@ -1,3 +1,7 @@
+<!--
+La soluzione definitiva per la sincronizzazione dei file
+-->
+
 # Synchthing
 
 ## La soluzione definitiva per sincronizzare i tuoi file
