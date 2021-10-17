@@ -1,9 +1,6 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import './styles/app.css'; // Here
-import 'animate.css';
+import { createApp } from "vue";
+import App from "./App.vue";
+import "./styles/app.css"; // Here
 
-const app = createApp(App)
-
-app.mount('#app')
-
+const app = createApp(App);
+app.mount("#app");

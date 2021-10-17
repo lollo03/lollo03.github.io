@@ -86,7 +86,7 @@ export default {
   name: "Articolo",
   components: { Markdown },
   async setup() {
-    let articoli = [];
+    const articoli = ref([]);
     let temp;
     let t = await ottieniArticoli();
     let nArticoli = 0;
@@ -97,7 +97,7 @@ export default {
     const isLista = ref(false);
     for (const i of t) {
       temp = await ottieniArticolo(i);
-      articoli.unshift(temp);
+      articoli.value.unshift(temp);
       nArticoli++;
     }
 

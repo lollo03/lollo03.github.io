@@ -35,7 +35,7 @@
               <div class="flex">
                 <div
                   style="border-top-color:transparent"
-                  class="w-16 h-16 border-4 border-purple-400 border-dotted rounded-full animate-spin m-auto"
+                  class="w-16 h-16 border-4 border-purple-400 border-dotted rounded-full animate-spin m-auto mt-12"
                 ></div>
               </div>
             </template>
@@ -48,7 +48,7 @@
               <div class="flex">
                 <div
                   style="border-top-color:transparent"
-                  class="w-16 h-16 border-4 border-purple-400 border-dotted rounded-full animate-spin m-auto"
+                  class="w-16 h-16 border-4 border-purple-400 border-dotted rounded-full animate-spin m-auto mt-12"
                 ></div>
               </div>
             </template>
