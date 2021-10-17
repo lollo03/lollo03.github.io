@@ -20,7 +20,16 @@ export async function ottieniArticolo(nome) {
   let response = await fetch(
     `https://raw.githubusercontent.com/lollo03/${repo}/${brach}/${nome}`
   );
-  let temp = await response.text();
+  let temp = {};
+  temp.testo = await response.text();
+  temp.nome = nome
+    .split("-")[1]
+    .split(".")[0]
+    .trim();
+  temp.desc = temp.testo
+    .split("<!--")[1]
+    .split("-->")[0]
+    .trim();
   return temp;
 }
 
