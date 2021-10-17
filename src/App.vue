@@ -11,7 +11,7 @@
         <div class="md:h-100" style="border-left: 2px solid"></div>
         <hr class="md:hidden" />
         <div class="md:w-2/3 md:overflow-y-scroll h-full">
-          <div class="w-100 h-10 border-b-2 flex">
+          <div class="w-100 h-10 border-b-2 border-t-2 flex">
             <div
               class="flex-auto border-r-2 flex justify-items-center items-center"
               v-bind:class="{ sel: isPortfolio }"
@@ -27,11 +27,22 @@
               <p class="flex-auto">Posts</p>
             </div>
           </div>
-
-          <suspense>
+          <suspense v-if="!isPortfolio">
             <template #default>
-              <Articolo v-if="!isPortfolio" />
-              <Portfolio v-else />
+              <Articolo />
+            </template>
+            <template #fallback>
+              <div class="flex">
+                <div
+                  style="border-top-color:transparent"
+                  class="w-16 h-16 border-4 border-purple-400 border-dotted rounded-full animate-spin m-auto"
+                ></div>
+              </div>
+            </template>
+          </suspense>
+          <suspense v-if="isPortfolio">
+            <template #default>
+              <Portfolio />
             </template>
             <template #fallback>
               <div class="flex">
