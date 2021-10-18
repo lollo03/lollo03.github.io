@@ -4,7 +4,7 @@ Una raccolta di tool che uso giornalmente sul mio Mac
 
 # MacOS for dummies
 
-> Ovvero, come rendere MacOS usabile
+## Ovvero, come rendere MacOS usabile
 
 Ciao, in questo breve articolo voglio consigliarti alcune della app che trovo essenziali sul mio MackBook pro 13 pollici con processore M1 del 2020.
 Premetto che molte delle app che elencherò sono **open source** perchè come tutti sappiamo, libero è meglio!

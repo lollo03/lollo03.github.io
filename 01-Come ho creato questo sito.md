@@ -35,6 +35,9 @@ Il sito è da considerare ancora in **beta**, ci sono una serie di aspetti da co
 - [x] Cambiare i colori della day-mode
 - [x] Rivedere i font
 - [x] Inserire ulteriori animazioni
-- [ ] Inserire una ricerca
+- [x] Inserire una ricerca
 
 Se sei curioso da un'occhiata al codice del progetto su [github](https://github.com/lollo03/lollo03.github.io) e se ritieni il progetto interessante non dimenticare di lasciare una ⭐️!
+
+**Update Lun 18 ottobre 2021**:
+Finalmente ho inserito una ricerca tramite un libreria chiamata [fuse.js](https://fusejs.io), che consiglio caldamente. Il prossimo step sarà ottimizzare l'operazione di recuperero degli articoli, in modo da rendere il tutto più veloce.
