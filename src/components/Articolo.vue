@@ -17,7 +17,8 @@
       </svg>
       <p class="text-2xl" v-if="!singolo">Indice</p>
     </div>
-    <div v-if="singolo" class="flex" @click="singolo = false">
+
+    <div v-if="singolo" class="flex flex-grow" @click="singolo = false">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="h-8 w-8"
@@ -36,17 +37,7 @@
     </div>
   </div>
   <div v-if="isLista">
-    <div class="p-3 border-b">
-      <div
-        v-for="(articolo, i) in articoli"
-        v-bind:key="i"
-        @click="mostraSingolo(i)"
-      >
-        <b>{{ articolo.nome }}</b>
-        <p>{{ articolo.desc }}</p>
-        <hr v-if="i != nArticoli - 1" />
-      </div>
-    </div>
+    <Ricerca :data="articoli" :nArticoli="nArticoli" />
   </div>
   <div v-if="!singolo">
     <div class="my-5 mx-8 text-justify">
@@ -81,10 +72,11 @@ import Markdown from "vue3-markdown-it";
 import MarkdownItTaskLists from "markdown-it-task-lists";
 import { ottieniArticoli, ottieniArticolo } from "../api";
 import { ref } from "vue";
+import Ricerca from "../components/Ricerca.vue";
 
 export default {
   name: "Articolo",
-  components: { Markdown },
+  components: { Markdown, Ricerca },
   async setup() {
     const articoli = ref([]);
     let temp;

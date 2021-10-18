@@ -7,7 +7,7 @@
 - [x] Cambio colore white mode
 - [x] Migliorare visibilità testi
 - [x] Cambiare stile titoli e roba varia
-- [ ] Ricerca
+- [x] Ricerca (fuse.js ? SI, lo adoro.)
 - [x] Due pagine? (1 x portfolio)
 - [x] Togliere sottolineato link
 - [x] Aggiungere spazio sopra titoli
