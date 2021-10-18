@@ -18,25 +18,27 @@
     </button>
   </div>
   <div class="p-3 border-b" v-if="query == ''">
-    <div v-for="(articolo, i) in data" v-bind:key="i">
+    <div
+      v-for="(articolo, i) in data"
+      v-bind:key="i"
+      @click="$emit('singolo', articolo.nome)"
+    >
       <b>{{ articolo.nome }}</b>
       <p>{{ articolo.desc }}</p>
       <hr v-if="i != nArticoli - 1" />
     </div>
   </div>
   <div class="p-3 border-b" v-else>
-    <div v-for="(articolo, i) in result" v-bind:key="i">
+    <div
+      v-for="(articolo, i) in result"
+      v-bind:key="i"
+      @click="$emit('singolo', articolo.item.nome)"
+    >
       <b>{{ articolo.item.nome }}</b>
       <p>{{ articolo.item.desc }}</p>
       <hr v-if="i != nRisultati - 1" />
     </div>
   </div>
-
-  <!-- <div v-for="(articolo, i) in result" v-bind:key="i">
-    <b>{{ articolo.item.nome }}</b>
-    <p>{{ articolo.item.desc }}</p>
-  </div>
-  -->
 </template>
 
 <script>
@@ -45,6 +47,7 @@ import { ref } from "vue";
 
 export default {
   props: ["data", "nArticoli"],
+  emits: ["singolo"],
   data() {
     const options = {
       keys: [
@@ -80,7 +83,6 @@ export default {
     },
     cercaAvanzato() {
       this.result = this.fuseAvanzato.search(this.query);
-      console.log(this.result);
       this.nRisultati = this.result.length;
     },
   },

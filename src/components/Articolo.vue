@@ -37,7 +37,11 @@
     </div>
   </div>
   <div v-if="isLista">
-    <Ricerca :data="articoli" :nArticoli="nArticoli" />
+    <Ricerca
+      :data="articoli"
+      :nArticoli="nArticoli"
+      @singolo="mostraSingolo($event)"
+    />
   </div>
   <div v-if="!singolo">
     <div class="my-5 mx-8 text-justify">
@@ -112,7 +116,11 @@ export default {
     },
     mostraSingolo(id) {
       this.singolo = true;
-      this.quale = id;
+      this.quale = this.articoli
+        .map(function(e) {
+          return e.nome;
+        })
+        .indexOf(id);
       this.isLista = false;
     },
   },
