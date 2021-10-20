@@ -10,7 +10,13 @@
       @keydown.enter="cerca"
     />
     <button
-      class="flex-shrink-0 border-transparent border-4 text-purple-400 text-bold text-sm py-1 px-2 rounded"
+      class="flex-shrink-0 border-transparent border-4 text-purple-400 text-bold text-sm py-1 px-2 rounded transition
+              duration-500
+              ease-in-out
+              hover:text-purple-400
+              transform
+              hover:-translate-y-1
+              hover:scale-110"
       type="button"
       @click="cercaAvanzato"
     >

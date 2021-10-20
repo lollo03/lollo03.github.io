@@ -68,7 +68,25 @@
       :html="true"
     />
   </div>
-  <br />
+  <button
+    @click="carica"
+    v-if="caricato != 0 && carico == false"
+    class="border-2 border-opacity-100 border-black dark:border-white rounded-xl p-2 transition
+              duration-500
+              ease-in-out
+              hover:text-purple-400
+              transform
+              hover:-translate-y-1
+              hover:scale-110
+              hover:border-purple-600"
+  >
+    Carica un altro articolo
+  </button>
+  <p v-else-if="caricato == 0 && carico == false">
+    WOW! Hai letto tutti gli articoli!
+  </p>
+  <p v-else>Carico...</p>
+  <br /><br /><br /><br /><br />
 </template>
 
 <script>
@@ -82,6 +100,7 @@ export default {
   name: "Articolo",
   components: { Markdown, Ricerca },
   async setup() {
+    const carico = ref(false);
     const articoli = ref([]);
     let temp;
     let t = await ottieniArticoli();
@@ -90,10 +109,11 @@ export default {
     const singolo = ref(false);
     const quale = ref("");
 
+    const caricato = ref(t.length - 3);
     const isLista = ref(false);
-    for (const i of t) {
-      temp = await ottieniArticolo(i);
-      articoli.value.unshift(temp);
+    for (let i = t.length - 1; i >= caricato.value; i--) {
+      temp = await ottieniArticolo(t[i]);
+      articoli.value.push(temp);
       nArticoli++;
     }
 
@@ -103,6 +123,9 @@ export default {
       singolo,
       quale,
       nArticoli,
+      caricato,
+      t,
+      carico,
       plugins: [
         {
           plugin: MarkdownItTaskLists,
@@ -122,6 +145,13 @@ export default {
         })
         .indexOf(id);
       this.isLista = false;
+    },
+    async carica() {
+      this.carico = true;
+      this.caricato = this.caricato - 1;
+      let temp = await ottieniArticolo(this.t[this.caricato]);
+      this.carico = false;
+      this.articoli.push(temp);
     },
   },
 };

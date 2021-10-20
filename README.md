@@ -12,5 +12,7 @@
 - [x] Togliere sottolineato link
 - [x] Aggiungere spazio sopra titoli
 - [x] Cambiare colore a dark mode
-- [x] Modifica globalmente gli <hr> come quelli nella sezione posts
+- [x] Modifica globalmente gli `<hr>` come quelli nella sezione posts
 - [x] Aggiungi animazione di caricamento
+- [x] Aggiungi lazy-loading
+- [ ] Aggiungi animazione caricamento articoli
