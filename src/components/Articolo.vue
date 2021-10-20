@@ -40,6 +40,7 @@
     <Ricerca
       :data="articoli"
       :nArticoli="nArticoli"
+      :index="indexRicerca"
       @singolo="mostraSingolo($event)"
     />
   </div>
@@ -59,19 +60,10 @@
         <hr />
       </div>
     </div>
-  </div>
-  <div v-else class="my-5 mx-8 text-justify">
-    <Markdown
-      :source="articoli[quale].testo"
-      :plugins="plugins"
-      class="mb-6"
-      :html="true"
-    />
-  </div>
-  <button
-    @click="carica"
-    v-if="caricato != 0 && carico == false"
-    class="border-2 border-opacity-100 border-black dark:border-white rounded-xl p-2 transition
+    <button
+      @click="carica"
+      v-if="caricato != 0 && carico == false"
+      class="border-2 border-opacity-100 border-black dark:border-white rounded-xl p-2 transition
               duration-500
               ease-in-out
               hover:text-purple-400
@@ -79,13 +71,36 @@
               hover:-translate-y-1
               hover:scale-110
               hover:border-purple-600"
-  >
-    Carica un altro articolo
-  </button>
-  <p v-else-if="caricato == 0 && carico == false">
-    WOW! Hai letto tutti gli articoli!
-  </p>
-  <p v-else>Carico...</p>
+    >
+      Carica un altro articolo
+    </button>
+    <p v-else-if="caricato == 0 && carico == false">
+      WOW! Hai letto tutti gli articoli!
+    </p>
+    <p v-else>Carico...</p>
+  </div>
+  <div v-else class="my-5 mx-8 text-justify">
+    <Markdown
+      :source="singArticolo.testo"
+      :plugins="plugins"
+      class="mb-6"
+      :html="true"
+    />
+    <button
+      @click="singolo = false"
+      class="border-2 border-opacity-100 border-black dark:border-white rounded-xl p-2 transition
+              duration-500
+              ease-in-out
+              hover:text-purple-400
+              transform
+              hover:-translate-y-1
+              hover:scale-110
+              hover:border-purple-600"
+    >
+      Torna indietro
+    </button>
+  </div>
+
   <br /><br /><br /><br /><br />
 </template>
 
@@ -102,6 +117,7 @@ export default {
   async setup() {
     const carico = ref(false);
     const articoli = ref([]);
+    const singArticolo = ref("");
     let temp;
     let t = await ottieniArticoli();
     let nArticoli = 0;
@@ -116,7 +132,8 @@ export default {
       articoli.value.push(temp);
       nArticoli++;
     }
-
+    let indexRicerca = t;
+    indexRicerca = indexRicerca.reverse();
     return {
       isLista,
       articoli,
@@ -125,7 +142,9 @@ export default {
       nArticoli,
       caricato,
       t,
+      indexRicerca,
       carico,
+      singArticolo,
       plugins: [
         {
           plugin: MarkdownItTaskLists,
@@ -137,13 +156,20 @@ export default {
     mostraLista() {
       this.isLista = !this.isLista;
     },
-    mostraSingolo(id) {
+    async mostraSingolo(id) {
       this.singolo = true;
-      this.quale = this.articoli
+      let temp = this.articoli
         .map(function(e) {
-          return e.nome;
+          return e.id;
         })
         .indexOf(id);
+
+      if (temp == -1) {
+        temp = await ottieniArticolo(id);
+      } else {
+        temp = this.articoli[temp];
+      }
+      this.singArticolo = temp;
       this.isLista = false;
     },
     async carica() {
@@ -152,6 +178,7 @@ export default {
       let temp = await ottieniArticolo(this.t[this.caricato]);
       this.carico = false;
       this.articoli.push(temp);
+      this.nArticoli++;
     },
   },
 };

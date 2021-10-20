@@ -22,6 +22,7 @@ export async function ottieniArticolo(nome) {
   );
   let temp = {};
   temp.testo = await response.text();
+  temp.id = nome;
   temp.nome = nome
     .split("-")[1]
     .split(".")[0]

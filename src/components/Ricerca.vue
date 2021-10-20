@@ -20,28 +20,36 @@
       type="button"
       @click="cercaAvanzato"
     >
-      Cerca
+      Ricerca avanzata
     </button>
   </div>
   <div class="p-3 border-b" v-if="query == ''">
     <div
-      v-for="(articolo, i) in data"
+      v-for="(articolo, i) in indice"
       v-bind:key="i"
-      @click="$emit('singolo', articolo.nome)"
+      @click="$emit('singolo', articolo)"
     >
-      <b>{{ articolo.nome }}</b>
-      <p>{{ articolo.desc }}</p>
-      <hr v-if="i != nArticoli - 1" />
+      <b>{{
+        articolo
+          .split("-")[1]
+          .split(".")[0]
+          .trim()
+      }}</b>
+      <hr v-if="i != indice.length - 1" />
     </div>
   </div>
   <div class="p-3 border-b" v-else>
     <div
       v-for="(articolo, i) in result"
       v-bind:key="i"
-      @click="$emit('singolo', articolo.item.nome)"
+      @click="$emit('singolo', articolo.item)"
     >
-      <b>{{ articolo.item.nome }}</b>
-      <p>{{ articolo.item.desc }}</p>
+      <b>{{
+        articolo.item
+          .split("-")[1]
+          .split(".")[0]
+          .trim()
+      }}</b>
       <hr v-if="i != nRisultati - 1" />
     </div>
   </div>
@@ -52,25 +60,23 @@ import Fuse from "fuse.js";
 import { ref } from "vue";
 
 export default {
-  props: ["data", "nArticoli"],
+  props: ["data", "nArticoli", "index"],
   emits: ["singolo"],
   data() {
+    const indice = ref(this.index);
+    console.log(indice);
+
     const options = {
-      keys: [
-        { name: "nome", weight: 1 },
-        { name: "descrizione", weight: 0.7 },
-      ],
+      includeScore: true,
     };
-    const fuse = new Fuse(this.data, options);
+    const fuse = new Fuse(this.index, options);
     const optionsAvanzato = {
-      keys: [
-        { name: "nome", weight: 1 },
-        { name: "descrizione", weight: 0.7 },
-      ],
-      findAllMatches: true,
+      keys: ["nome", "descrizione", "testo"],
+      threshold: 0.3,
+      ignoreLocation: true,
+      ignoreFieldNorm: true,
     };
     const fuseAvanzato = new Fuse(this.data, optionsAvanzato);
-
     const result = ref([]);
     const query = ref("");
 
@@ -79,6 +85,7 @@ export default {
       fuseAvanzato,
       query,
       result,
+      indice,
       nRisultati: 0,
     };
   },
@@ -89,6 +96,7 @@ export default {
     },
     cercaAvanzato() {
       this.result = this.fuseAvanzato.search(this.query);
+      console.log(this.result);
       this.nRisultati = this.result.length;
     },
   },

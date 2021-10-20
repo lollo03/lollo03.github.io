@@ -16,3 +16,4 @@
 - [x] Aggiungi animazione di caricamento
 - [x] Aggiungi lazy-loading
 - [ ] Aggiungi animazione caricamento articoli
+- [ ] Ricerca avanzata
