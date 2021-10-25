@@ -1,5 +1,5 @@
 <template>
-  <div class="flex aboslute top-5">
+  <div class="flex aboslute top-5 cursor-pointer">
     <div class="flex" @click="mostraLista">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@
     </div>
     <button
       @click="carica"
-      v-if="caricato != 0 && carico == false"
+      v-if="caricato != t.length - 1 && carico == false"
       class="border-2 border-opacity-100 border-black dark:border-white rounded-xl p-2 transition
               duration-500
               ease-in-out
@@ -74,7 +74,7 @@
     >
       Carica un altro articolo
     </button>
-    <p v-else-if="caricato == 0 && carico == false">
+    <p v-else-if="caricato == t.length - 1 && carico == false">
       WOW! Hai letto tutti gli articoli!
     </p>
     <p v-else>Carico...</p>
@@ -125,15 +125,16 @@ export default {
     const singolo = ref(false);
     const quale = ref("");
 
-    const caricato = ref(t.length - 3);
+    const caricato = ref(-1);
     const isLista = ref(false);
-    for (let i = t.length - 1; i >= caricato.value; i--) {
+    t.reverse(); //NON TOCCARE O SI ROMPE TUTTO
+    for (let i = 0; i < 3; i++) {
       temp = await ottieniArticolo(t[i]);
       articoli.value.push(temp);
       nArticoli++;
+      caricato.value++;
     }
-    let indexRicerca = t;
-    indexRicerca = indexRicerca.reverse();
+
     return {
       isLista,
       articoli,
@@ -142,7 +143,7 @@ export default {
       nArticoli,
       caricato,
       t,
-      indexRicerca,
+      indexRicerca: t,
       carico,
       singArticolo,
       plugins: [
@@ -174,7 +175,7 @@ export default {
     },
     async carica() {
       this.carico = true;
-      this.caricato = this.caricato - 1;
+      this.caricato++;
       let temp = await ottieniArticolo(this.t[this.caricato]);
       this.carico = false;
       this.articoli.push(temp);

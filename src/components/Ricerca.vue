@@ -23,7 +23,7 @@
       Ricerca avanzata
     </button>
   </div>
-  <div class="p-3 border-b" v-if="query == ''">
+  <div class="p-3 border-b cursor-pointer" v-if="query == ''">
     <div
       v-for="(articolo, i) in indice"
       v-bind:key="i"
@@ -64,7 +64,6 @@ export default {
   emits: ["singolo"],
   data() {
     const indice = ref(this.index);
-    console.log(indice);
 
     const options = {
       includeScore: true,
@@ -96,7 +95,7 @@ export default {
     },
     cercaAvanzato() {
       this.result = this.fuseAvanzato.search(this.query);
-      console.log(this.result);
+
       this.nRisultati = this.result.length;
     },
   },

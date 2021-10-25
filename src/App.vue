@@ -13,14 +13,14 @@
         <div class="md:w-2/3 md:overflow-y-scroll h-full">
           <div class="w-100 h-10 border-b-2 border-t-2 flex">
             <div
-              class="flex-auto border-r-2 flex justify-items-center items-center"
+              class="flex-auto border-r-2 flex justify-items-center items-center cursor-pointer"
               v-bind:class="{ sel: isPortfolio }"
               @click="portfolio"
             >
               <p class="flex-auto">Portfolio</p>
             </div>
             <div
-              class="flex-auto flex justify-items-center	items-center"
+              class="flex-auto flex justify-items-center	items-center cursor-pointer"
               v-bind:class="{ sel: !isPortfolio }"
               @click="posts"
             >

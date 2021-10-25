@@ -17,3 +17,4 @@
 - [x] Aggiungi lazy-loading
 - [ ] Aggiungi animazione caricamento articoli
 - [ ] Ricerca avanzata
+- [x] FIXARE bug ordine caricamento articoli
