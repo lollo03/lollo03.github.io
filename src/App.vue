@@ -65,6 +65,7 @@ import Top from "./components/Top.vue";
 import Scheda from "./components/Scheda.vue";
 import Portfolio from "./components/Portfolio.vue";
 import { ref } from "vue";
+import { useRoute } from "vue-router";
 
 export default {
   name: "App",
@@ -77,6 +78,7 @@ export default {
   setup() {
     const isDark = ref(false);
     const isPortfolio = ref(true);
+
     return {
       isDark,
       isPortfolio,
@@ -84,6 +86,12 @@ export default {
   },
   mounted() {
     this.isDark = this.getMediaPreference();
+    const route = useRoute();
+    console.log(route.query);
+    if (route.query.art) {
+      console.log("ok");
+      this.isPortfolio.value = false;
+    }
   },
   methods: {
     darkToggle() {
