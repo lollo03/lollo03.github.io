@@ -1,5 +1,7 @@
 <!--
-Una raccolta di tool che uso giornalmente sul mio Mac
+titolo: "Una raccolta di tool che uso giornalmente sul mio Mac",
+desc: "Una raccolta di tool che uso giornalmente sul mio Mac",
+data: "15/10/2021"
 -->
 
 # MacOS for dummies

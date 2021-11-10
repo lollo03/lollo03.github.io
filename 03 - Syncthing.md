@@ -1,5 +1,7 @@
 <!--
-La soluzione definitiva per la sincronizzazione dei file
+titolo: "La soluzione definitiva per la sincronizzazione dei file",
+desc: "La soluzione definitiva per la sincronizzazione dei file",
+data: "16/10/2021"
 -->
 
 # Synchthing
