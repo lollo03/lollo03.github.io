@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="flex items-center border-b py-2 w-4/5 md:w-1/2 m-auto border-purple-400"
-  >
+  <div class="flex items-center border-b py-2 w-4/5 md:w-1/2 m-auto border-purple-400">
     <input
       class="appearance-none bg-transparent border-none w-full mr-3 py-1 px-2 leading-tight focus:outline-none focus:text-purple-400 text-semibold"
       type="text"
@@ -24,11 +22,7 @@
     </button>
   </div>
   <div class="p-3 border-b cursor-pointer" v-if="query == ''">
-    <div
-      v-for="(articolo, i) in indice"
-      v-bind:key="i"
-      @click="$emit('singolo', articolo)"
-    >
+    <div v-for="(articolo, i) in indice" v-bind:key="i" @click="$emit('singolo', articolo)">
       <b>{{
         articolo
           .split("-")[1]
@@ -39,11 +33,7 @@
     </div>
   </div>
   <div class="p-3 border-b" v-else>
-    <div
-      v-for="(articolo, i) in result"
-      v-bind:key="i"
-      @click="$emit('singolo', articolo.item)"
-    >
+    <div v-for="(articolo, i) in result" v-bind:key="i" @click="$emit('singolo', articolo.item)">
       <b>{{
         articolo.item
           .split("-")[1]

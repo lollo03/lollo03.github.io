@@ -1,14 +1,12 @@
 var brach = "articles";
 var repo = "lollo03.github.io";
 export async function ottieniArticoli() {
-  let response = await fetch(
-    `https://api.github.com/repos/lollo03/${repo}/git/trees/${brach}?recursive=1`
-  );
+  let response = await fetch(`https://api.github.com/repos/lollo03/${repo}/git/trees/${brach}?recursive=1`);
   let temp = await response.json();
   let arr = temp.tree;
   let fin = [];
   arr.forEach((el) => {
-    if (el.path.split(".")[1] == "md" && el.path != "portfolio.md") {
+    if (el.path.split(".")[1] == "md" && !el.path.startsWith(".") && el.path != "portfolio.md") {
       //solo gli articoli vanno di qua
       fin.push(el.path);
     }
@@ -17,27 +15,23 @@ export async function ottieniArticoli() {
 }
 
 export async function ottieniArticolo(nome) {
-  let response = await fetch(
-    `https://raw.githubusercontent.com/lollo03/${repo}/${brach}/${nome}`
-  );
+  let response = await fetch(`https://raw.githubusercontent.com/lollo03/${repo}/${brach}/${nome}`);
   let temp = {};
-  temp.testo = await response.text();
-  temp.id = nome;
-  temp.nome = nome
-    .split("-")[1]
-    .split(".")[0]
-    .trim();
-  temp.desc = temp.testo
-    .split("<!--")[1]
-    .split("-->")[0]
-    .trim();
+  let risp = await response.text();
+
+  let t = risp.split("<!--")[1];
+  t = t.split("-->")[0];
+
+  let obj = JSON.parse(t);
+  temp.id = obj.nome;
+  temp.nome = obj.nome;
+  temp.desc = obj.desc;
+  temp.testo = risp;
   return temp;
 }
 
 export async function ottieniPortfolio() {
-  let response = await fetch(
-    `https://raw.githubusercontent.com/lollo03/${repo}/${brach}/portfolio.md`
-  );
+  let response = await fetch(`https://raw.githubusercontent.com/lollo03/${repo}/${brach}/portfolio.md`);
   let temp = await response.text();
   return temp;
 }
