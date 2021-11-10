@@ -1,7 +1,9 @@
 <!--
-titolo: "Breve storia di come ho ideato e creato il sito",
-desc: "Breve storia di come ho ideato e creato il sito",
-data: "15/10/2021"
+{
+"titolo": "Breve storia di come ho ideato e creato il sito",
+"desc": "Breve storia di come ho ideato e creato il sito",
+"data": "15/10/2021"
+}
 -->
 
 # Come ho creato questo sito?
