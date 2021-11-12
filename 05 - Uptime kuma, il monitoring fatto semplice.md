@@ -1,12 +1,12 @@
 <!--
 {
-"titolo":"Uptime kuma, il monitoring fatto semplice",
+"titolo":"Uptime Kuma, il monitoring fatto semplice",
 "desc":"Una soluzione all-in-one per monitorare facilmente tutti i tuoi servizi",
 "data":"11/11/2021"
 }
 -->
 
-# Uptime kuma
+# Uptime Kuma
 
 ## Il monitoring fatto semplice
 
