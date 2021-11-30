@@ -7,19 +7,6 @@
       v-model="query"
       @keydown.enter="cerca"
     />
-    <button
-      class="flex-shrink-0 border-transparent border-4 text-purple-400 text-bold text-sm py-1 px-2 rounded transition
-              duration-500
-              ease-in-out
-              hover:text-purple-400
-              transform
-              hover:-translate-y-1
-              hover:scale-110"
-      type="button"
-      @click="cercaAvanzato"
-    >
-      Ricerca avanzata
-    </button>
   </div>
   <div class="p-3 border-b cursor-pointer" v-if="query == ''">
     <div v-for="(articolo, i) in indice" v-bind:key="i" @click="$emit('singolo', articolo)">
@@ -42,6 +29,7 @@
       }}</b>
       <hr v-if="i != nRisultati - 1" />
     </div>
+    <p class="text-red-400" v-if="nRisultati == 0">Mi dispiace, la tua ricerca non ha prodotto risultati</p>
   </div>
 </template>
 
@@ -81,11 +69,6 @@ export default {
   methods: {
     cerca() {
       this.result = this.fuse.search(this.query);
-      this.nRisultati = this.result.length;
-    },
-    cercaAvanzato() {
-      this.result = this.fuseAvanzato.search(this.query);
-
       this.nRisultati = this.result.length;
     },
   },
