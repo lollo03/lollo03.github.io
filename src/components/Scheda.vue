@@ -6,112 +6,25 @@
       </div>
       <div class="flex-grow p-1 flex flex-col">
         <div class="flex-grow flex items-center justify-center">
-          <h1
-            class="
-              text-xl
-              transition
-              duration-500
-              ease-in-out
-              hover:text-purple-400
-              transform
-              hover:-translate-y-1
-              hover:scale-110
-            "
-          >
-            Lorenzo Andreasi
-          </h1>
+          <h1 class="text-xl transition duration-500 ease-in-out hover:text-purple-400 transform hover:-translate-y-1 hover:scale-110">Lorenzo Andreasi</h1>
         </div>
-        <div
-          class="
-            flex-grow flex
-            items-center
-            justify-center
-            transition
-            duration-500
-            ease-in-out
-            hover:text-purple-400
-            transform
-            hover:-translate-y-1
-            hover:scale-110
-          "
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-            />
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-            />
+        <div class="flex-grow flex items-center justify-center transition duration-500 ease-in-out hover:text-purple-400 transform hover:-translate-y-1 hover:scale-110">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
           </svg>
           <p>Termoli (CB)</p>
         </div>
-        <div
-          class="
-            flex-grow flex
-            items-center
-            justify-center
-            transition
-            duration-500
-            ease-in-out
-            hover:text-purple-400
-            transform
-            hover:-translate-y-1
-            hover:scale-110
-          "
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-            />
+        <div class="flex-grow flex items-center justify-center transition duration-500 ease-in-out hover:text-purple-400 transform hover:-translate-y-1 hover:scale-110">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
           </svg>
           <p>02/05/2003</p>
         </div>
-        <div
-          class="
-            flex-grow flex
-            items-center
-            justify-center
-            transition
-            duration-500
-            ease-in-out
-            hover:text-purple-400
-            transform
-            hover:-translate-y-1
-            hover:scale-110
-          "
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
+        <div class="flex-grow flex items-center justify-center transition duration-500 ease-in-out hover:text-purple-400 transform hover:-translate-y-1 hover:scale-110">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path d="M12 14l9-5-9-5-9 5 9 5z" />
-            <path
-              d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-            />
+            <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -126,24 +39,10 @@
     <hr />
     <div>
       <div class="flex p-5">
-        <a
-          href="https://www.instagram.com/lolloandr/?hl=it"
-          class="flex-grow flex no-underline text-black dark:text-white"
-        >
+        <a href="https://www.instagram.com/lolloandr/?hl=it" class="flex-grow flex no-underline text-black dark:text-white">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="
-              h-6
-              w-6
-              flex-grow
-              transition
-              duration-500
-              ease-in-out
-              hover:text-purple-400
-              transform
-              hover:-translate-y-1
-              hover:scale-110
-            "
+            class="h-6 w-6 flex-grow transition duration-500 ease-in-out hover:text-purple-400 transform hover:-translate-y-1 hover:scale-110"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentcolor"
@@ -154,24 +53,10 @@
           </svg>
         </a>
 
-        <a
-          href="https://github.com/lollo03"
-          class="flex-grow flex no-underline text-black dark:text-white"
-        >
+        <a href="https://github.com/lollo03" class="flex-grow flex no-underline text-black dark:text-white">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="
-              h-6
-              w-6
-              flex-grow
-              transition
-              duration-500
-              ease-in-out
-              hover:text-purple-400
-              transform
-              hover:-translate-y-1
-              hover:scale-110
-            "
+            class="h-6 w-6 flex-grow transition duration-500 ease-in-out hover:text-purple-400 transform hover:-translate-y-1 hover:scale-110"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentcolor"
@@ -185,18 +70,12 @@
     </div>
     <hr />
     <div class="m-5 text-justify">
+      <p>Ciao, sono Lorenzo, benvenuto nel mio portfolio/blog. Buona visita!</p>
       <p>
-        Ciao, sono Lorenzo, benvenuto nel mio portfolio/blog. Ti consiglio di
-        visitare questo sito <b>da pc</b> per la migliore esperienza possibile.
+        Sono uno studente al 5 anno del liceo scientifico scienze applicate, mi piace l'informatica, la fotografia e la vela. Faccio del mio meglio per rendere l'informatica interessante, fruibile e
+        divertente. Per questo leggendo i miei articoli puoi trovare tantissimi modi per programmare <b>divertendoti!</b>
       </p>
-      <p>
-        Sono uno studente al 5 anno del liceo scientifico scienze applicate, mi
-        piace l'informatica e la fotografia.
-      </p>
-      <p>
-        Qua sopra trovi il mio profilo github, visitalo per scoprire come ho
-        costruito questo sito (è qualcosa di davvero figo!)
-      </p>
+      <p>Qua sopra trovi il mio profilo github, visitalo per scoprire come ho costruito questo sito e tutti i miei altri progetti.</p>
       <b>Buona visita!</b>
     </div>
     <hr />

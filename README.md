@@ -15,6 +15,6 @@
 - [x] Modifica globalmente gli `<hr>` come quelli nella sezione posts
 - [x] Aggiungi animazione di caricamento
 - [x] Aggiungi lazy-loading
-- [ ] Aggiungi animazione caricamento articoli
+- [x] Aggiungi animazione caricamento articoli
 - [ ] Ricerca avanzata
 - [x] FIXARE bug ordine caricamento articoli
