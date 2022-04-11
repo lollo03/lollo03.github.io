@@ -1,31 +1,14 @@
 <template>
   <div class="flex aboslute top-5 cursor-pointer">
     <div class="flex" @click="mostraLista">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-8 w-8"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M4 6h16M4 12h16M4 18h16"
-        />
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
       </svg>
       <p class="text-2xl" v-if="!singolo">Indice</p>
     </div>
 
     <div v-if="singolo" class="flex flex-grow" @click="singolo = false">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-8 w-8"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path
           stroke-linecap="round"
           stroke-linejoin="round"
@@ -37,26 +20,12 @@
     </div>
   </div>
   <div v-if="isLista">
-    <Ricerca
-      :data="articoli"
-      :nArticoli="nArticoli"
-      :index="indexRicerca"
-      @singolo="mostraSingolo($event)"
-    />
+    <Ricerca :data="articoli" :nArticoli="nArticoli" :index="indexRicerca" @singolo="mostraSingolo($event)" />
   </div>
   <div v-if="!singolo">
     <div class="my-5 mx-8 text-justify">
-      <div
-        v-for="(articolo, i) in articoli"
-        v-bind:key="i"
-        class="my-4 mx-1 markdown"
-      >
-        <Markdown
-          :source="articolo.testo"
-          :plugins="plugins"
-          class="mb-6"
-          :html="true"
-        />
+      <div v-for="(articolo, i) in articoli" v-bind:key="i" class="my-4 mx-1 markdown">
+        <Markdown :source="articolo.testo" :plugins="plugins" class="mb-6" :html="true" />
         <hr />
       </div>
     </div>
@@ -80,12 +49,7 @@
     <p v-else>Carico...</p>
   </div>
   <div v-else class="my-5 mx-8 text-justify">
-    <Markdown
-      :source="singArticolo.testo"
-      :plugins="plugins"
-      class="mb-6"
-      :html="true"
-    />
+    <Markdown :source="singArticolo.testo" :plugins="plugins" class="mb-6" :html="true" />
     <button
       @click="singolo = false"
       class="border-2 border-opacity-100 border-black dark:border-white rounded-xl p-2 transition
@@ -186,4 +150,8 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style></style>
+<style>
+.markdown code {
+  background-color: rgb(0, 0, 0, 0.1);
+}
+</style>
