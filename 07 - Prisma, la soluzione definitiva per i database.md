@@ -12,7 +12,7 @@
 
 I **database** si distinguono in due grandi categorie: **relazionali** e **non relazionali**. I primi si distinguono per la loro capacità di mantenere ordinati ed integri i dati, **a discapito della flessibilità**. I secondi ci permettono di interagire col database senza nessun [DBMS](https://it.wikipedia.org/wiki/Database_management_system) che ci _"sgridi"_ quando facciamo qualche cappellata. \
 Quindi, se vogliamo dei database affidabili dobbiamo rinunciare alla flessibilità? Con **[prisma](https://www.prisma.io)** no. \
-Prisma è un tool per **JavaScript e Go** che ci permette di **creare ed interagire** con i nostri database con facilità, guidandoci dalla creazione dello schema, alla popolazione, al recupero dei dati. \
+Prisma è un tool per **JavaScript e Go** che ci permette di **creare ed interagire** con i nostri database con facilità, guidandoci dalla creazione dello schema, alla popolazione, al recupero dei dati.
 
 Prisma è composto da tre parti:
 
@@ -30,6 +30,6 @@ A tutto questo si aggiungono una serie di features molto interessanti come **aut
 Prisma è compatibile con i più famosi database relazionali: **PostgreSQL, MySQL, MariaDB, SQLite ed SQL Server.** Inoltre è compatibile anche con **MongoDB**.
 Può essere usato con **JavaScript, TypeScript e Go**
 
-Per il tuo prossimo progetto (o se ti vuoi approcciare ai database relazioni) ti **consiglio vivamente** di provare [prisma](https://www.prisma.io).
+Per il tuo prossimo progetto (o se ti vuoi approcciare ai database relazionali) ti **consiglio vivamente** di provare [prisma](https://www.prisma.io).
 
 Alla prossima!
