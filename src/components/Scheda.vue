@@ -32,7 +32,7 @@
               d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
             />
           </svg>
-          <p>IISS Alfano</p>
+          <p>PoliMI</p>
         </div>
       </div>
     </div>
@@ -72,7 +72,7 @@
     <div class="m-5 text-justify">
       <p>Ciao, sono Lorenzo, benvenuto nel mio portfolio/blog. Buona visita!</p>
       <p>
-        Sono uno studente al 5 anno del liceo scientifico scienze applicate, mi piace l'informatica, la fotografia e la vela. Faccio del mio meglio per rendere l'informatica interessante, fruibile e
+        Sono uno studente del PoliMI al primo anno di ingegneria informatica, la mie passioni sono la fotografia e la vela. Faccio del mio meglio per rendere l'informatica interessante, fruibile e
         divertente. Per questo leggendo i miei articoli puoi trovare tantissimi modi per programmare <b>divertendoti!</b>
       </p>
       <p>Qua sopra trovi il mio profilo github, visitalo per scoprire come ho costruito questo sito e tutti i miei altri progetti.</p>
@@ -82,9 +82,9 @@
     <div class="text-left m-5">
       <h3>Certificati e partecipazioni:</h3>
       <ul>
-        <li>Certificazione di inglese cambridge B2</li>
+        <li>Certificazione di inglese cambridge C1</li>
         <li>Partecipazione categoria informatica ODASC 2020</li>
-        <li>Abilitazione ADI FIV</li>
+        <li>Istruttore di vela FIV</li>
       </ul>
     </div>
   </div>
