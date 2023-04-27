@@ -1,6 +1,6 @@
 <!--
 {
-"titolo":"Homelab struggle, parte 1, hardware",
+"titolo":"Homelab struggle",
 "desc":"Portarsi a casa un server con poco",
 "data":"27/04/2023"
 }
