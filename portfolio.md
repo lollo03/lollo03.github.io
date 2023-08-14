@@ -44,5 +44,5 @@ Tecnologie usate:
 
 Clicca [qua](https://github.com/lollo03/NotACMS) per vedere il repository!
 
-# Yathzee
+## Yathzee
 Una versione online del famoso gioco Yathzee... avrai bisogno di 5 dadi, amici (opzionale) e di aprire [Yathzee-board](https://www.lolloandr.com/Yathzee-board/) !
