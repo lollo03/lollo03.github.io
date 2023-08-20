@@ -1,35 +1,14 @@
 <template>
   <div class="w-screen flex h-12 items-center border-b-2">
     <div class="flex-grow md:w-5/6">
-      <h1 class="text-left ml-3 md:ml-8 text-xl md:text-2xl animate__animated animate__backInDown">
-        Lorenzo Andreasi
-      </h1>
+      <h1 class="text-left ml-3 md:ml-8 text-xl md:text-2xl animate__animated animate__backInDown">Lorenzo Andreasi</h1>
     </div>
     <div class="flex-grow flex flex-row-reverse animate__animated animate__backInRight">
       <button v-on:click="$emit('darkToggle')" class="mr-6">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-8 w-1/1"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          v-if="!isDark"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-          />
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-1/1" fill="none" viewBox="0 0 24 24" stroke="currentColor" v-if="!isDark">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
         </svg>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-8 w-1/1"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          v-else
-        >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-1/1" fill="none" viewBox="0 0 24 24" stroke="currentColor" v-else>
           <path
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -38,6 +17,9 @@
           />
         </svg>
       </button>
+      <div>
+        <a href="https://lollo03.github.io/Yathzee-board/"><h3 style="margin: 2em">Yathzee</h3></a>
+      </div>
     </div>
   </div>
 </template>
@@ -49,5 +31,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>
