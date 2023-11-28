@@ -6,7 +6,7 @@ export async function ottieniArticoli() {
   let arr = temp.tree;
   let fin = [];
   arr.forEach((el) => {
-    if (el.path.split(".")[1] == "md" && !el.path.startsWith(".") && el.path != "portfolio.md") {
+    if (el.path.split(".")[1] == "md" && !el.path.startsWith(".") && el.path != "portfolio.md" && el.path != "aboutme.md") {
       //solo gli articoli vanno di qua
       fin.push(el.path);
     }
@@ -32,6 +32,12 @@ export async function ottieniArticolo(nome) {
 
 export async function ottieniPortfolio() {
   let response = await fetch(`https://raw.githubusercontent.com/lollo03/${repo}/${brach}/portfolio.md`);
+  let temp = await response.text();
+  return temp;
+}
+
+export async function ottieniAbout() {
+  let response = await fetch(`https://raw.githubusercontent.com/lollo03/${repo}/${brach}/aboutme.md`);
   let temp = await response.text();
   return temp;
 }
