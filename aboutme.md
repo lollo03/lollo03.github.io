@@ -6,6 +6,8 @@ Qua sopra trovi il mio profilo github, visitalo per scoprire come ho costruito q
 
 **Buona visita!**
 
+---
+
 ### Certificati e partecipazioni:
 
 - Certificazione di inglese cambridge C1
