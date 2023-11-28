@@ -1,12 +1,15 @@
-var brach = "articles";
-var repo = "lollo03.github.io";
+const brach = "articles";
+const repo = "lollo03.github.io";
+const IgnoredFiles = ['portfolio.md', 'aboutme.md']
+
+
 export async function ottieniArticoli() {
   let response = await fetch(`https://api.github.com/repos/lollo03/${repo}/git/trees/${brach}?recursive=1`);
   let temp = await response.json();
   let arr = temp.tree;
   let fin = [];
   arr.forEach((el) => {
-    if (el.path.split(".")[1] == "md" && !el.path.startsWith(".") && el.path != "portfolio.md" && el.path != "aboutme.md") {
+    if (el.path.split(".")[1] == "md" && !el.path.startsWith(".") && !IgnoredFiles.includes(el.path)) {
       //solo gli articoli vanno di qua
       fin.push(el.path);
     }
