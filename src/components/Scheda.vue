@@ -69,29 +69,33 @@
       </div>
     </div>
     <hr />
-    <div class="m-5 text-justify">
-      <p>Ciao, sono Lorenzo, benvenuto nel mio portfolio/blog. Buona visita!</p>
-      <p>
-        Sono uno studente del PoliMI al primo anno di ingegneria informatica, la mie passioni sono la fotografia e la vela. Faccio del mio meglio per rendere l'informatica interessante, fruibile e
-        divertente. Per questo leggendo i miei articoli puoi trovare tantissimi modi per programmare <b>divertendoti!</b>
-      </p>
-      <p>Qua sopra trovi il mio profilo github, visitalo per scoprire come ho costruito questo sito e tutti i miei altri progetti.</p>
-      <b>Buona visita!</b>
-    </div>
-    <hr />
-    <div class="text-left m-5">
-      <h3>Certificati e partecipazioni:</h3>
-      <ul>
-        <li>Certificazione di inglese cambridge C1</li>
-        <li>Partecipazione categoria informatica ODASC 2020</li>
-        <li>Istruttore di vela FIV</li>
-      </ul>
+    <div class="p-6 text-justify">
+      <Markdown :source="aboutme" :plugins="plugins" :html="true" class="mb-6" />
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import Markdown from "vue3-markdown-it";
+import MarkdownItTaskLists from "markdown-it-task-lists";
+import { ottieniAbout } from "../api";
+
+export default {
+  name: "Scheda",
+  components: { Markdown },
+  async setup() {
+    let aboutme = await ottieniAbout();
+
+    return {
+      aboutme,
+      plugins: [
+        {
+          plugin: MarkdownItTaskLists,
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style scoped>
@@ -101,6 +105,11 @@ img {
   -moz-transition: border 500ms ease-out;
   -o-transition: border 500ms ease-out;
   transition: border 500ms ease-out;
+}
+
+.md {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 img:hover {

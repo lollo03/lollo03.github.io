@@ -1,11 +1,6 @@
 <template>
   <div class="my-5 mx-8 text-justify dark:arancio">
-    <Markdown
-      :source="portfolio"
-      :plugins="plugins"
-      :html="true"
-      class="mb-6"
-    />
+    <Markdown :source="portfolio" :plugins="plugins" :html="true" class="mb-6" />
     <br />
     <br />
   </div>

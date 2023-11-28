@@ -4,7 +4,7 @@
       <Top @darkToggle="darkToggle" :isDark="isDark" />
       <div class="md:flex h-full">
         <div class="md:w-1/3 hide-scrollbar" style="overflow: scroll; margin-bottom: 3em;">
-          <Scheda />
+          <suspense> <Scheda /> </suspense>
         </div>
         <div class="md:h-100" style="border-left: 2px solid"></div>
         <hr class="md:hidden" />
